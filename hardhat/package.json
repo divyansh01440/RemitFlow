@@ -1,0 +1,25 @@
+{
+    "name": "remitflow-contracts",
+    "version": "1.0.0",
+    "description": "RemitFlow smart contracts — cross-border USDC remittance on Polygon",
+    "private": true,
+    "scripts": {
+      "compile": "hardhat compile",
+      "test": "hardhat test",
+      "coverage": "hardhat coverage",
+      "node": "hardhat node",
+      "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+      "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+      "deploy:polygon": "hardhat run scripts/deploy.js --network polygon"
+    },
+    "devDependencies": {
+      "hardhat": "^2.19.0",
+      "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+      "@openzeppelin/contracts": "^5.0.0",
+      "dotenv": "^16.3.1",
+      "chai": "^4.3.10"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
